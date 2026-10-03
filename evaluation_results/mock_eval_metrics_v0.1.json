@@ -1,0 +1,14 @@
+{
+  "evaluation_name": "claude-language-analysis-agent frozen evaluation",
+  "benchmark_version": "0.1",
+  "provider": "MockProvider",
+  "case_count": 20,
+  "successful_executions": 20,
+  "execution_success_rate": 1.0,
+  "routing_correct": 20,
+  "routing_accuracy": 1.0,
+  "register_case_count": 14,
+  "register_correct": 13,
+  "heuristic_register_match_rate": 0.9285714285714286,
+  "interpretation_note": "These metrics evaluate deterministic implementation behavior against the frozen v0.1 expectations. The register match rate does not establish sociolinguistic construct validity."
+}

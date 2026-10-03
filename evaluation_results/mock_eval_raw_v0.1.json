@@ -1,0 +1,320 @@
+{
+  "evaluation_name": "claude-language-analysis-agent frozen evaluation",
+  "benchmark_version": "0.1",
+  "provider": "MockProvider",
+  "case_count": 20,
+  "results": [
+    {
+      "id": "EVAL_001",
+      "request": "Assess the register of this message.",
+      "text": "Pursuant to university policy, all applications shall be submitted by Friday.",
+      "expected_tools": [
+        "compare_register_profile"
+      ],
+      "expected_register": "institutional",
+      "status": "success",
+      "actual_tools": [
+        "compare_register_profile"
+      ],
+      "actual_register": "institutional",
+      "error": null
+    },
+    {
+      "id": "EVAL_002",
+      "request": "Assess the register of this message.",
+      "text": "Hey, no worries, I will send it later.",
+      "expected_tools": [
+        "compare_register_profile"
+      ],
+      "expected_register": "informal",
+      "status": "success",
+      "actual_tools": [
+        "compare_register_profile"
+      ],
+      "actual_register": "informal",
+      "error": null
+    },
+    {
+      "id": "EVAL_003",
+      "request": "Assess the register of this message.",
+      "text": "Could you please review the attached document?",
+      "expected_tools": [
+        "compare_register_profile"
+      ],
+      "expected_register": "neutral-professional",
+      "status": "success",
+      "actual_tools": [
+        "compare_register_profile"
+      ],
+      "actual_register": "neutral-professional",
+      "error": null
+    },
+    {
+      "id": "EVAL_004",
+      "request": "Assess the register of this message.",
+      "text": "Kindly respond at your earliest convenience.",
+      "expected_tools": [
+        "compare_register_profile"
+      ],
+      "expected_register": "formal-professional",
+      "status": "success",
+      "actual_tools": [
+        "compare_register_profile"
+      ],
+      "actual_register": "formal-professional",
+      "error": null
+    },
+    {
+      "id": "EVAL_005",
+      "request": "Assess the tone of this message.",
+      "text": "The document is on the table.",
+      "expected_tools": [
+        "compare_register_profile"
+      ],
+      "expected_register": "unclear",
+      "status": "success",
+      "actual_tools": [
+        "compare_register_profile"
+      ],
+      "actual_register": "unclear",
+      "error": null
+    },
+    {
+      "id": "EVAL_006",
+      "request": "Check the politeness of this message.",
+      "text": "Could you please revise the report by Friday?",
+      "expected_tools": [
+        "analyze_text_features"
+      ],
+      "expected_register": null,
+      "status": "success",
+      "actual_tools": [
+        "analyze_text_features"
+      ],
+      "actual_register": null,
+      "error": null
+    },
+    {
+      "id": "EVAL_007",
+      "request": "Check the deadline features in this message.",
+      "text": "Please send the final version tomorrow.",
+      "expected_tools": [
+        "analyze_text_features"
+      ],
+      "expected_register": null,
+      "status": "success",
+      "actual_tools": [
+        "analyze_text_features"
+      ],
+      "actual_register": null,
+      "error": null
+    },
+    {
+      "id": "EVAL_008",
+      "request": "Extract linguistic features from this message.",
+      "text": "Would you mind sending the file today?",
+      "expected_tools": [
+        "analyze_text_features"
+      ],
+      "expected_register": null,
+      "status": "success",
+      "actual_tools": [
+        "analyze_text_features"
+      ],
+      "actual_register": null,
+      "error": null
+    },
+    {
+      "id": "EVAL_009",
+      "request": "Analyze this workplace message.",
+      "text": "Could you please revise the report by Friday?",
+      "expected_tools": [
+        "analyze_text_features",
+        "compare_register_profile"
+      ],
+      "expected_register": "neutral-professional",
+      "status": "success",
+      "actual_tools": [
+        "analyze_text_features",
+        "compare_register_profile"
+      ],
+      "actual_register": "neutral-professional",
+      "error": null
+    },
+    {
+      "id": "EVAL_010",
+      "request": "Analyze this workplace message.",
+      "text": "Pursuant to policy, all employees shall comply.",
+      "expected_tools": [
+        "analyze_text_features",
+        "compare_register_profile"
+      ],
+      "expected_register": "institutional",
+      "status": "success",
+      "actual_tools": [
+        "analyze_text_features",
+        "compare_register_profile"
+      ],
+      "actual_register": "institutional",
+      "error": null
+    },
+    {
+      "id": "EVAL_011",
+      "request": "Analyze this workplace message.",
+      "text": "Hey, no worries, I will handle it.",
+      "expected_tools": [
+        "analyze_text_features",
+        "compare_register_profile"
+      ],
+      "expected_register": "informal",
+      "status": "success",
+      "actual_tools": [
+        "analyze_text_features",
+        "compare_register_profile"
+      ],
+      "actual_register": "informal",
+      "error": null
+    },
+    {
+      "id": "EVAL_012",
+      "request": "Analyze this workplace message.",
+      "text": "Kindly confirm receipt at your earliest convenience.",
+      "expected_tools": [
+        "analyze_text_features",
+        "compare_register_profile"
+      ],
+      "expected_register": "formal-professional",
+      "status": "success",
+      "actual_tools": [
+        "analyze_text_features",
+        "compare_register_profile"
+      ],
+      "actual_register": "formal-professional",
+      "error": null
+    },
+    {
+      "id": "EVAL_013",
+      "request": "Analyze this workplace message.",
+      "text": "The meeting starts at nine.",
+      "expected_tools": [
+        "analyze_text_features",
+        "compare_register_profile"
+      ],
+      "expected_register": "unclear",
+      "status": "success",
+      "actual_tools": [
+        "analyze_text_features",
+        "compare_register_profile"
+      ],
+      "actual_register": "unclear",
+      "error": null
+    },
+    {
+      "id": "EVAL_014",
+      "request": "Check the deadline in this message.",
+      "text": "The report is due today.",
+      "expected_tools": [
+        "analyze_text_features"
+      ],
+      "expected_register": null,
+      "status": "success",
+      "actual_tools": [
+        "analyze_text_features"
+      ],
+      "actual_register": null,
+      "error": null
+    },
+    {
+      "id": "EVAL_015",
+      "request": "Check the politeness of this message.",
+      "text": "Thank you for reviewing the proposal.",
+      "expected_tools": [
+        "analyze_text_features"
+      ],
+      "expected_register": null,
+      "status": "success",
+      "actual_tools": [
+        "analyze_text_features"
+      ],
+      "actual_register": null,
+      "error": null
+    },
+    {
+      "id": "EVAL_016",
+      "request": "Assess the register of this message.",
+      "text": "Please be advised that the office will close early.",
+      "expected_tools": [
+        "compare_register_profile"
+      ],
+      "expected_register": "formal-professional",
+      "status": "success",
+      "actual_tools": [
+        "compare_register_profile"
+      ],
+      "actual_register": "neutral-professional",
+      "error": null
+    },
+    {
+      "id": "EVAL_017",
+      "request": "Assess the register of this message.",
+      "text": "In accordance with the procedure, the committee shall record the decision.",
+      "expected_tools": [
+        "compare_register_profile"
+      ],
+      "expected_register": "institutional",
+      "status": "success",
+      "actual_tools": [
+        "compare_register_profile"
+      ],
+      "actual_register": "institutional",
+      "error": null
+    },
+    {
+      "id": "EVAL_018",
+      "request": "Extract linguistic features from this message.",
+      "text": "Would you send the notes as soon as possible?",
+      "expected_tools": [
+        "analyze_text_features"
+      ],
+      "expected_register": null,
+      "status": "success",
+      "actual_tools": [
+        "analyze_text_features"
+      ],
+      "actual_register": null,
+      "error": null
+    },
+    {
+      "id": "EVAL_019",
+      "request": "Analyze this workplace message.",
+      "text": "Please send the draft tomorrow.",
+      "expected_tools": [
+        "analyze_text_features",
+        "compare_register_profile"
+      ],
+      "expected_register": "neutral-professional",
+      "status": "success",
+      "actual_tools": [
+        "analyze_text_features",
+        "compare_register_profile"
+      ],
+      "actual_register": "neutral-professional",
+      "error": null
+    },
+    {
+      "id": "EVAL_020",
+      "request": "Assess the tone of this message.",
+      "text": "Cheers, I will take care of it.",
+      "expected_tools": [
+        "compare_register_profile"
+      ],
+      "expected_register": "informal",
+      "status": "success",
+      "actual_tools": [
+        "compare_register_profile"
+      ],
+      "actual_register": "informal",
+      "error": null
+    }
+  ]
+}
